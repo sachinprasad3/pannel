@@ -1,0 +1,66 @@
+html {
+  height: 100%;
+}
+body {
+display: flex;
+flex-direction: column;
+height: 100%;
+width: 100%;
+}
+section{
+  height: 100%;
+  position: relative;
+}
+.content {
+flex: 1 0 auto;
+}
+
+.sidebar{
+  width: 250px;
+  background-color: #000;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  /* margin-bottom: 100px; */
+  /* display: flex; */
+  z-index: -1;
+}
+
+.sidebar a{
+  display: block;
+  color: #fff;
+  padding: 15px;
+  text-decoration: none;
+}
+.sidebar a.active{
+  background: #4caf50;
+}
+
+.aside{
+  margin-left: 250px;
+  padding: 1px 15px;
+  overflow: auto;
+  min-height: 100%;
+  /* overflow-y: scroll; */
+  /* z-index: -1 */
+
+}
+.songs-list{
+  overflow-y: auto;
+  bottom: 200px;
+  /* height: 580px; */
+}
+footer {
+background: #42A5F5;
+color: white;
+margin-top: auto;
+z-index: 9;
+}
+
+.footer{
+  flex-shrink: 0;
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
